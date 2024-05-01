@@ -161,7 +161,7 @@ const TestTwoScreen = (props: Props) => {
 
   const onFinish: FormProps["onFinish"] = (value) => {
     let userData = getLocalStoreData();
-    let userDataStore = [...userData];
+    let userDataStore = userData ? [...userData]: [];
     if (userStore.status === "edit" && userStore.editRow) {
       let newData = userDataStore.filter(
         (item: any) => userStore.editRow.key !== item.key
