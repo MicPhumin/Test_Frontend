@@ -22,7 +22,7 @@ const MainScreen = (props: Props) => {
           <Col>
             <Button className="mainbutton" onClick={() => navigate("/Test2")}>
               <p>{t("Test")} 2</p>
-              <p>{t("Connect API")}</p>
+              <p>{t("Manage Form")}</p>
             </Button>
           </Col>
         </Row>
